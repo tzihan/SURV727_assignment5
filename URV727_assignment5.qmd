@@ -244,8 +244,6 @@ run_kmeans <- function(K) {
   )
   return(result$cluster)
 }
-
-run_kmeans(4)
 ```
 
 We want to utilize this function to iterate over multiple Ks (e.g., K = 2, ..., 10) and -- each time -- add the resulting cluster membership as a new variable to our (cleaned) original data frame (`acs_il_t`). There are multiple solutions for this task, e.g. think about the `apply` family or `for` loops.
